@@ -140,6 +140,10 @@ func (scheduler *Scheduler) Clear() {
 	scheduler.funcRegistry = task.NewFuncRegistry()
 }
 
+func (scheduler *Scheduler) getTasks() map[task.ID]*task.Task {
+	return scheduler.tasks
+} 
+
 func (scheduler *Scheduler) populateTasks() error {
 	tasks, err := scheduler.taskStore.Fetch()
 	if err != nil {
