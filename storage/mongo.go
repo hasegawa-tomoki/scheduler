@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mongodb/mongo-go-driver/mongo"
+	"go.mongodb.org/mongo-driver"
 	"github.com/mongodb/mongo-go-driver/x/bsonx"
 )
 
